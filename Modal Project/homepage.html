@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./login.js" defer></script>
+    <script src="./signup.js" defer></script>
+    <link rel="stylesheet" href="./homepage.css" />
+    <title>Modal Project</title>
+</head>
+<body>
+    <div class="modal-presentation">
+        <h1>Modal Project</h1>
+        <div>
+        <button id="openSignupBtn">Sign up</button>
+        <button id="openLoginBtn">Log in</button>
+    </div>
+    </div>
+
+    <div class="modal-container" id="signupModalContainer">
+        <div class="modal-pop">
+            <div class="modal-header">
+                <h3 class="modal-title">Sign up</h3>
+                <span class="modal-close" id="closeBtn">&times</span>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <input type="text" placeholder="First Name" id="modalFirstName"/>
+                    <input type="text" placeholder="Second Name" id="modalSecondName" />
+                    <input type="email" placeholder="Enter email" id="modalSignupEmail" />
+                    <input type="password" placeholder="Enter password" id="modalSignupPassword" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-button" id="signupBtn">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+     
+    <div class="modal-container" id="loginModalContainer">
+        <div class="modal-pop">
+            <div class="modal-header">
+                <h3 class="modal-title">Log in</h3>
+                <span class="modal-close" id="closeLoginBtn">&times</span>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <input type="email" placeholder="Enter email" id="loginEmail"/>
+                    <input type="password" placeholder="Enter password" id="loginPassword" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-button" id="loginBtn">Log in</button>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

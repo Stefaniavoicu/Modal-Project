@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.modal-presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.modal-presentation button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkgray;
+    font-weight: bold;
+}
+
+.modal-presentation button:hover {
+    cursor: pointer;
+    background-color:rgb(129, 129, 129);
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.modal-pop{
+    width: 60%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    margin: 15% auto;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-close {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.modal-content form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.modal-content form input {
+    height: 25px;
+    padding: 10px;
+}
+
+.modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-button:hover {
+    cursor: pointer;
+    background-color: rgb(1, 73, 1);
+}
